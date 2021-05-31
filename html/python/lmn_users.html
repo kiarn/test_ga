@@ -1,0 +1,563 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en-GB" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API: aj.plugins.lmn_users &mdash; linuxmuster-webui7 1.0.156-1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="API: aj.plugins.lmn_setup_wizard" href="lmn_setup_wizard.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> linuxmuster-webui7
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.156-1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Python API</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="lmn_auth.html">API: aj.plugins.lmn_auth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lmn_common.html">API: aj.plugins.lmn_common</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lmn_devices.html">API: aj.plugins.lmn_devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lmn_groupmembership.html">API: aj.plugins.lmn_groupmembership</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lmn_landingpage.html">API: aj.plugins.lmn_landingpage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lmn_linbo.html">API: aj.plugins.lmn_linbo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lmn_quotas.html">API: aj.plugins.lmn_quotas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lmn_session.html">API: aj.plugins.lmn_session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lmn_settings.html">API: aj.plugins.lmn_settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lmn_setup_wizard.html">API: aj.plugins.lmn_setup_wizard</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API: aj.plugins.lmn_users</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-aj.plugins.lmn_users.views">LMN Users API</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">linuxmuster-webui7</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>API: aj.plugins.lmn_users</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/python/lmn_users.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api-aj-plugins-lmn-users">
+<h1>API: aj.plugins.lmn_users<a class="headerlink" href="#api-aj-plugins-lmn-users" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-aj.plugins.lmn_users.views">
+<span id="lmn-users-api"></span><h2>LMN Users API<a class="headerlink" href="#module-aj.plugins.lmn_users.views" title="Permalink to this headline">¶</a></h2>
+<p>APIs for user management in linuxmuster.net. Basically parse the output of
+sophomorix commands.</p>
+<dl class="py class">
+<dt id="aj.plugins.lmn_users.views.Handler">
+<em class="property">class </em><code class="sig-prename descclassname">aj.plugins.lmn_users.views.</code><code class="sig-name descname">Handler</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">context</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="aj.plugins.lmn_users.views.Handler.handle_api_extra_courses">
+<code class="sig-name descname">handle_api_extra_courses</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">http_context</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler.handle_api_extra_courses"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler.handle_api_extra_courses" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read and write extra-courses csv lists.
+Method GET: read extra-courses list.
+Method POST: write extra-courses list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>http_context</strong> (<em>HttpContext</em>) – HttpContext</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of extra-courses in read mode, one dict per extra-course.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list of dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aj.plugins.lmn_users.views.Handler.handle_api_extra_students">
+<code class="sig-name descname">handle_api_extra_students</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">http_context</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler.handle_api_extra_students"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler.handle_api_extra_students" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read and write extra-students csv lists.
+Method GET: read extra-students list.
+Method POST: write extra-students list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>http_context</strong> (<em>HttpContext</em>) – HttpContext</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of extra-students in read mode, one dict per extra-student.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list of dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aj.plugins.lmn_users.views.Handler.handle_api_filelistImport">
+<code class="sig-name descname">handle_api_filelistImport</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">http_context</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler.handle_api_filelistImport"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler.handle_api_filelistImport" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import and save users’s import lists (teachers, students, …).
+Method POST.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>http_context</strong> (<em>HttpContext</em>) – HttpContext</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Users lists in import mode, one dict per user</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list of dict in import mode</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aj.plugins.lmn_users.views.Handler.handle_api_sophomorix_globaladmins">
+<code class="sig-name descname">handle_api_sophomorix_globaladmins</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">http_context</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler.handle_api_sophomorix_globaladmins"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler.handle_api_sophomorix_globaladmins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get globaladmins list from LDAP tree.
+Method POST.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>http_context</strong> (<em>HttpContext</em>) – HttpContext</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of globaladminss with details, one globaladmin per dict.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list of dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aj.plugins.lmn_users.views.Handler.handle_api_sophomorix_schooladmins">
+<code class="sig-name descname">handle_api_sophomorix_schooladmins</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">http_context</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler.handle_api_sophomorix_schooladmins"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler.handle_api_sophomorix_schooladmins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get schooladmins list from LDAP tree.
+Method POST.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>http_context</strong> (<em>HttpContext</em>) – HttpContext</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of schooladminss with details, one schooladmin per dict.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list of dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aj.plugins.lmn_users.views.Handler.handle_api_sophomorix_students">
+<code class="sig-name descname">handle_api_sophomorix_students</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">http_context</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler.handle_api_sophomorix_students"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler.handle_api_sophomorix_students" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get students list from LDAP tree.
+Method POST.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>http_context</strong> (<em>HttpContext</em>) – HttpContext</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of students with details, one student per dict.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list of dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aj.plugins.lmn_users.views.Handler.handle_api_sophomorix_teachers">
+<code class="sig-name descname">handle_api_sophomorix_teachers</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">http_context</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler.handle_api_sophomorix_teachers"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler.handle_api_sophomorix_teachers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get teachers list from LDAP tree.
+Method POST.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>http_context</strong> (<em>HttpContext</em>) – HttpContext</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of teachers with details, one teacher per dict.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list of dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aj.plugins.lmn_users.views.Handler.handle_api_students">
+<code class="sig-name descname">handle_api_students</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">http_context</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler.handle_api_students"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler.handle_api_students" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read and write students csv lists.
+Method GET: read students list.
+Method POST: write students list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>http_context</strong> (<em>HttpContext</em>) – HttpContext</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of students in read mode, one dict per student.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list of dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aj.plugins.lmn_users.views.Handler.handle_api_teachers">
+<code class="sig-name descname">handle_api_teachers</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">http_context</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler.handle_api_teachers"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler.handle_api_teachers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read and write teachers csv lists.
+Method GET: read teachers list.
+Method POST: write teachers list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>http_context</strong> (<em>HttpContext</em>) – HttpContext</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of teachers in read mode, one dict per teacher.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list of dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aj.plugins.lmn_users.views.Handler.handle_api_users_apply">
+<code class="sig-name descname">handle_api_users_apply</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">http_context</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler.handle_api_users_apply"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler.handle_api_users_apply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs an add, update or kill of sophomorix objects after a
+<cite>sophomorix-check</cite> if necessary.
+Method POST.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>http_context</strong> (<em>HttpContext</em>) – HttpContext</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aj.plugins.lmn_users.views.Handler.handle_api_users_check">
+<code class="sig-name descname">handle_api_users_check</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">http_context</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler.handle_api_users_check"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler.handle_api_users_check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Launch <cite>sophomorix-check</cite> to find out if more actions are required to
+save the changes to the sophomorix objects.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>http_context</strong> (<em>HttpContext</em>) – HttpContext</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Output of <cite>sophomorix-check</cite></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)">dict</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aj.plugins.lmn_users.views.Handler.handle_api_users_globaladmins_create">
+<code class="sig-name descname">handle_api_users_globaladmins_create</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">http_context</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler.handle_api_users_globaladmins_create"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler.handle_api_users_globaladmins_create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create or delete global admins.
+Method POST.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>http_context</strong> (<em>HttpContext</em>) – HttpContext</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>State of the command</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aj.plugins.lmn_users.views.Handler.handle_api_users_password">
+<code class="sig-name descname">handle_api_users_password</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">http_context</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler.handle_api_users_password"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler.handle_api_users_password" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update users passwords through <cite>sophomorix-passwd</cite>.
+Method POST.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>http_context</strong> (<em>HttpContext</em>) – HttpContext</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Output of <cite>sophomorix-passwd</cite></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)">dict</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aj.plugins.lmn_users.views.Handler.handle_api_users_print">
+<code class="sig-name descname">handle_api_users_print</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">http_context</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler.handle_api_users_print"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler.handle_api_users_print" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print passwords as PDF.
+Method GET: get all classes lists for teachers.
+Method POST: all passwords.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>http_context</strong> (<em>HttpContext</em>) – HttpContext</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>With GET, list of classes, one classe per dict</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>With GET, list of dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aj.plugins.lmn_users.views.Handler.handle_api_users_print_download">
+<code class="sig-name descname">handle_api_users_print_download</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">http_context</span></em>, <em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler.handle_api_users_print_download"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler.handle_api_users_print_download" title="Permalink to this definition">¶</a></dt>
+<dd><p>Changes header to deliver a downloadable PDF.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>http_context</strong> (<em>HttpContext</em>) – HttpContext</p></li>
+<li><p><strong>name</strong> (<em>string</em>) – Name of the file</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aj.plugins.lmn_users.views.Handler.handle_api_users_schooladmins_create">
+<code class="sig-name descname">handle_api_users_schooladmins_create</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">http_context</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler.handle_api_users_schooladmins_create"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler.handle_api_users_schooladmins_create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create or delete school admins.
+Method POST.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>http_context</strong> (<em>HttpContext</em>) – HttpContext</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>State of the command</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aj.plugins.lmn_users.views.Handler.handle_api_users_test_password">
+<code class="sig-name descname">handle_api_users_test_password</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">http_context</span></em>, <em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler.handle_api_users_test_password"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler.handle_api_users_test_password" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if first password is still set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>http_context</strong> (<em>HttpContext</em>) – HttpContext</p></li>
+<li><p><strong>name</strong> (<em>string</em>) – User’s uid</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>First password still set or not</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aj.plugins.lmn_users.views.Handler.handle_group_quota">
+<code class="sig-name descname">handle_group_quota</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">http_context</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aj/plugins/lmn_users/views.html#Handler.handle_group_quota"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aj.plugins.lmn_users.views.Handler.handle_group_quota" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get samba share limits for a group list. Prepare type key for style
+(danger, warning, success) to display status.
+Method POST.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>http_context</strong> (<em>HttpContext</em>) – HttpContext</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>All quotas for specified users</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)">dict</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="lmn_setup_wizard.html" class="btn btn-neutral float-left" title="API: aj.plugins.lmn_setup_wizard" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Andreas Till &amp; Arnaud Kientz
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
